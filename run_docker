@@ -1,0 +1,9 @@
+docker run -d \
+-it \
+--gpus all \
+-e password=hugo0203 \
+-e user=hugo \
+--name pytorch \
+--mount type=bind,source=/home/hugo/workspace,target=/home/hugo/workspace \
+-h hugo \
+pytorch_image:latest
